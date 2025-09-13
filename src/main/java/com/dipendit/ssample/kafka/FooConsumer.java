@@ -11,7 +11,11 @@ public class FooConsumer {
 
     private final Logger LOG  = LoggerFactory.getLogger(FooProducer.class);
 
-    @KafkaListener(id = "fooGroup", topics = "topic1")
+    @KafkaListener(
+            id = "fooGroup",
+            topics = "topic1",
+            autoStartup = "false"
+    )
     public void listen(Foo2 foo) {
         LOG.info("Received: {}", foo);
         if (foo.getFoo().startsWith("fail")) {
