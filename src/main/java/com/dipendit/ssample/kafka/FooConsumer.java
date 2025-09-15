@@ -18,7 +18,8 @@ public class FooConsumer {
     @KafkaListener(
             id = "fooGroup",
             topics = "topic1",
-            autoStartup = "true"
+            autoStartup = "true",
+            containerFactory = "kafkaListenerContainerFactory"
     )
     public void listen(Foo2 foo) {
         LOG.info("Received: {}", foo);
