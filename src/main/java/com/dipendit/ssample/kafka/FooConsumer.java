@@ -12,7 +12,7 @@ public class FooConsumer {
 
     private final Logger LOG  = LoggerFactory.getLogger(FooProducer.class);
 
-    @Value("${ssample.foo}")
+    //@Value("${ssample.foo}")
     private String serverProp;
 
     @KafkaListener(

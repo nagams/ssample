@@ -1,0 +1,18 @@
+alert:
+  pctFailed:
+    myQueueName: Nagaraja
+    queueNames:
+      default:
+        warning: 4
+        critical: 5
+
+alerts:
+  queueNames:
+    default:
+      warning: 4
+      critical: 5
+
+spring:
+  cloud:
+    config:
+      enabled: false

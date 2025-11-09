@@ -1,0 +1,7 @@
+alert:
+  pctFailed:
+    myQueueName: Nagaraja-testDev
+    queueNames:
+      default:
+        warning: 4
+        critical: 5

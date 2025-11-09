@@ -13,3 +13,11 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       auto-offset-reset: latest
       bootstrap-servers: localhost:9092
+
+alert:
+  pctFailed:
+    myQueueName: Nagaraja-base
+    queueNames:
+      default:
+        warning: 4
+        critical: 5
